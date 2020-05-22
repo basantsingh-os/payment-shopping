@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+html , body
+{
+  height: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.xng-breadcrumb-root
+{
+  padding: 8px 16px;
+  display: inline;
+  border-radius: 0;
+}
+
+label.xng-breadcrumb-trail
+{
+  margin-bottom: 0 ;
+  color: white;
+
+}
+
+.xng-breadcrumb-separator
+{
+  padding: 0 0;
+}
+
+.xng-breadcrumb-link {
+
+color: white!important;
+}
+
+.xng-breadcrumb-separator {
+  color: white!important;
+}
+.StripeElement {
+  height: 3.125em;
+}
+
+
+
+

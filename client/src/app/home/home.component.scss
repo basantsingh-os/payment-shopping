@@ -1,0 +1,42 @@
+.featured
+{
+  height:250px;
+}
+
+// img
+// {
+//   object-fit: cover;
+//   height: 600px;
+//   width: 100%;
+
+// }
+
+
+
+.fit
+{
+  height: auto;
+  width: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+mat-toolbar{
+  padding: 0px!important;
+  margin: 0px!important;
+  height:750px;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-toolbar{
+    padding: 0px!important;
+    margin: 0px!important;
+    height:3500px;
+  }
+}
+
+
+
+
+
+
