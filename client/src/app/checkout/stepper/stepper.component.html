@@ -28,12 +28,12 @@
 
     <mat-step [stepControl]="reviewFormGroup">
      <app-checkout-review [reviewFormGroup]="reviewFormGroup"><ng-template matStepLabel>Review</ng-template></app-checkout-review>
-   
+
   </mat-step>
 
 
      <mat-step [stepControl]="paymentFormGroup">
-           <app-checkout-payment [addressFormGroup]="addressFormGroup" [deliveryFormGroup] ="deliveryFormGroup"  [paymentFormGroup]="paymentFormGroup">
+           <app-checkout-payment [addressFormGroup]="addressFormGroup" [deliveryFormGroup] ="deliveryFormGroup"  [paymentFormGroup]="paymentFormGroup"  [reviewFormGroup]="reviewFormGroup">
            <ng-template matStepLabel>Payment</ng-template>
            </app-checkout-payment>
 

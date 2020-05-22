@@ -24,6 +24,13 @@
 
       <div>
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext (click)="submitOrder()">Submit Order</button>
+        <button mat-button matStepperNext [disabled]="loading
+        || paymentFormGroup.invalid
+        || !cardNumberValid
+        || !cardExpiryValid
+        || !cardCvcValid"  (click)="submitOrder()">Submit Order
+        <i *ngIf="loading" class="fa fa-spinner fa-spin"></i>
+
+        </button>
       </div>
     </form>
