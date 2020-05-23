@@ -20,9 +20,9 @@ export class LoadingInterceptor implements HttpInterceptor {
 
   }
 
-  if (request.method === 'DELETE') {
+    if (request.method === 'DELETE') {
     return next.handle(request);
-}
+  }
 
     if (request.url.includes('emailexists')) {
       return next.handle(request);
@@ -31,7 +31,6 @@ export class LoadingInterceptor implements HttpInterceptor {
 
 
     return next.handle(request).pipe(
-      delay(400),
       finalize(() => {
         this.busyService.idle();
       })
